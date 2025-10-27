@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABES Engineering College - Registration Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ABES Engineering College</h1>
+        <p>Student Registration Portal</p>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Instructions</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <p>Please fill in all the required fields carefully before submitting the registration form. 
+                All fields marked with * are mandatory.</p>
+        </section>
+
+        <section class="registration-form">
+            <h2>Registration Form</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" required>
+
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required>
+
+                    <label for="dob">Date of Birth *</label>
+                    <input type="date" id="dob" required>
+
+                    <label>Gender:</label>
+                    <div class="gender">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Academic Details</legend>
+                    <label for="course">Course *</label>
+                    <select id="course" required>
+                        <option value="">--Select Course--</option>
+                        <option>B.Tech (CSE)</option>
+                        <option>B.Tech (AIML)</option>
+                        <option>B.Tech (DS)</option>
+                        <option>B.Tech (IT)</option>
+                    </select>
+
+                    <label for="year">Year *</label>
+                    <select id="year" required>
+                        <option value="">--Select Year--</option>
+                        <option>1st</option>
+                        <option>2nd</option>
+                        <option>3rd</option>
+                        <option>4th</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Login Details</legend>
+                    <label for="username">Username *</label>
+                    <input type="text" id="username" required>
+
+                    <label for="password">Password *</label>
+                    <input type="password" id="password" required>
+                </fieldset>
+
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset" class="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="recent">
+            <h2>Recent Registrations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rahul Kumar</td>
+                        <td>B.Tech (CSE)</td>
+                        <td>2nd</td>
+                        <td>rahul@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Anjali Sharma</td>
+                        <td>B.Tech (AIML)</td>
+                        <td>1st</td>
+                        <td>anjali@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at <a href="mailto:abes@college.edu">abes@college.edu</a></p>
+        <p>&copy; 2025 ABES EC, Ghaziabad</p>
+    </footer>
+
+</body>
+</html>
